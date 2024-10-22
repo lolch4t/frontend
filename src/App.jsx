@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-// Replace with your backend URL when deployed to Render
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3001';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://lolchat-backend.onrender.com';
 const socket = io(BACKEND_URL);
 
 function App() {
